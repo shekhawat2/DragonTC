@@ -2,6 +2,10 @@
 <manifest>
   <remote name="dtc"
           fetch="https://github.com/dragon-tc/" />
+
+  <remote name="llvmmirror"
+          fetch="https://github.com/llvm-mirror/" />
+
   <remote name="ln"
           fetch="https://git.linaro.org/" />
   <remote name="gh"
@@ -9,8 +13,8 @@
   <remote name="llvm"
           fetch="http://llvm.org/git/" />
           
-  <default remote="dtc"
-           revision="release_40"
+  <default remote="llvmmirror"
+           revision="release_60"
            sync-c="true"
            sync-j="8" />
            
@@ -22,6 +26,6 @@
   <project path="llvm/projects/libcxx" name="libcxx" />
   <project path="llvm/projects/libunwind" name="libunwind" />
   <project path="llvm/projects/openmp" name="openmp" />
-  <project path="build" name="build" revision="master" />
+  <project path="build" name="shekhawat2/dtc_build" remote="gh" revision="master" />
   <project path="llvm/tools/binutils" name="toolchain/binutils-gdb.git/" remote="ln" revision="binutils-2_27-branch" />
 </manifest>
